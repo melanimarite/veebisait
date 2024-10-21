@@ -33,10 +33,10 @@ a {
     padding: 0.5rem 2rem;
     border: none;
     border-radius: 5px;
+    color: #fff;
 }
 .btn-primary {
     background: #93cb52;
-    color: #fff;
 }
 .btn-primary:hover {
     background: #7ab436;
@@ -44,7 +44,6 @@ a {
 
 .btn-dark {
     background: #333;
-    color: #fff;
 }
 .btn-dark:hover {
     background: #444;
@@ -71,7 +70,7 @@ a {
     top: 0;
     display: flex;
     justify-content: space-between;
-    padding: lrem;
+    padding: 1rem;
 }
 #navbar ul {
     list-style: none;
@@ -121,26 +120,31 @@ a {
 }
 
 /* what */
-#what .items {
+#what .items  {
     display: flex;
 }
-#what .items .item {
+/*asendasin items osad article omaga*/
+#what .items article {
     flex: 1;
 }
-#what .items .item i {
+/*asendasin items osad article omaga*/
+#what .items article i {
     background: #93cb52;
     border-radius: 50%;
-    margin-bottom: lrem;
+    margin-bottom: 1rem;
 }
 /* who */
 #who {
     display: flex;
 }
-#who div {
+/*lisasin aside*/
+#who aside {
     flex: 1;
 }
-#who .who-img {
-    background: url('../img/people.jpg') no-repeat center center/cover;
+.who-img {
+    background-image: url('../img/people.jpg');
+    background-size: cover; /* Selleks, et pilt kataks kogu ruumi */
+    background-position: center; /* Et pilt on keskel */
 }
 #who ul {
     list-style: none;
@@ -169,8 +173,10 @@ a {
 #contact .contact-map {
     flex: 1;
 }
+/*lisasin siia border none, et kaotada hall piir, mis ilmus*/
 #contact .contact-form .form-group {
     margin: 0.75rem;
+    border: none;
 }
 #contact .contact-form .form-group label {
     display: block;
@@ -178,7 +184,7 @@ a {
 #contact .contact-form .form-group input,
 #contact .contact-form .form-group textarea {
     width: 100%;
-    padding: o.5rem;
+    padding: 0.5rem;
     border: none;
 }
 

@@ -26,7 +26,6 @@
     </head>
     <body id="home">
         <!-- navbar -->
-        <!-- navbar-->
          <nav id="navbar">
             <h1>
                 <span class="text-primary"><i class="fas fa-book-open"></i> FIR</span> MA
@@ -49,41 +48,44 @@
     </header>
         
         <!-- #what -->
+         <!-- asendasin mõne div'i article elemendiga -->
         <section id="what" class="bg-light py-1">
             <div class="container">
                 <h2 class="m-heading text-center">Mida Me <span class="text-primary">Pakume</span></h2>
                 <div class="items p-1">
-                    <div class="item text-center p-1">
+                    <article class="item text-center p-1">
                         <i class="fab fa-codepen fa-2x p-1"></i>
                     <div>
                     <h3>Kirjutame</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus soluta maiores repellendus! Porro sint reprehenderit suscipit odio consequatur doloribus sapiente!</p>
-                </div>
-            </div>
-            <div class="item text-center p-1">
+                    </div>
+                </article>
+            <article class="item text-center p-1">
                 <i class="fas fa-pencil fa-2x p-1"></i>
                 <div>
                     <h3>Kujundame</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut facere ad eveniet neque. Quo doloremque, cumque obcaecati corrupti praesentium vitae!</p>
                 </div>
-            </div>
-            <div class="item text-center p-1">
+        </article>
+            <article class="item text-center p-1">
                 <i class="fas fa-bug fa-2x p-1"></i>
                 <div>
                     <h3>Silume</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut facere ad eveniet neque. Quo doloremque, cumque obcaecati corrupti praesentium vitae!</p>
                 </div>
-            </div>
+            </article>
         </div>
+        </div>
+    </div>
     </div>
 </section>
 
 <!-- who -->
  <section id="who">
     <!-- img -->
-     <div class="who-img"></div>
+     <aside class="who-img"></aside>
      <!--text content-->
-    <div class="bg-dark p-1">
+    <article class="bg-dark p-1">
         <h2 class="m-heading">Kes <span class="text-primary">Me</span> Oleme</h2>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit a aliquid id quam ducimus perspiciatis! Enim architecto consequatur maxime sapiente!
         </p>
@@ -94,7 +96,7 @@
             <li>Lumi Valguke: konsultant</li>
             <li>Jõulu Vana: arendaja</li>
         </ul>
-    </div> 
+    </article> 
 </section>
 
 <!--#clients-->
@@ -112,31 +114,30 @@
 </section>
 <!-- #contact -->
  <section id="contact">
-    <!-- form -->
-     <div class="p-1 bg-primary contact-form">
+    <!-- lisasin div asemel form ning lisaks muutsin need fieldsettideks -->
+     <form class="p-1 bg-primary contact-form">
         <h2 class="m-heading">Võta meiega ühendust</h2>
         <p>Täida all olev vorm</p>
         <form action="">
-            <div class="form-group">
+            <fieldset class="form-group">
                 <label for="name">Nimi</label>
                 <input type="text" id="name" placeholder="Sisesta oma nimi">
-            </div>
-            <div class="form-group">
+            </fieldset>
+            <fieldset class="form-group">
                 <label for="email">Email</label>
                 <input type="email" id="email" placeholder="Sisesta oma email">
-            </div>
-            <div class="form-group">
+            </fieldset>
+            <fieldset class="form-group">
                 <label for="phone">Telefon</label>
                 <input type="phone" id="phone" placeholder="Sisesta oma telefoni number">
-            </div>
-            <div class="form-group">
+            </fieldset>
+            <fieldset class="form-group">
                 <label for="message">Sõnum</label>
                 <textarea id="message" placeholder="Sisesta oma sõnum">
                 </textarea>
-            </div>
+            </fieldset>
             <input type="submit" value="Saada" class="btn btn-dark">
         </form>
-     </div>
      <!-- map -->
       <div id="map" class="contact-map"></div>
  </section>
