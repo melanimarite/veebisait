@@ -22,10 +22,10 @@ a {
 }
 /* padding */
 .py-1 {
-    padding: lrem 0;
+    padding: 1rem 0;
 }
 .p-1 {
-        padding: lrem;
+        padding: 1rem;
 }
 
 .btn {
